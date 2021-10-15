@@ -17,7 +17,7 @@ public class BasicStream
         System.out.println(stringCollection.stream().filter(e->e.contains("a")||e.contains("b")).map(String::toUpperCase).collect(Collectors.toList()));
         //checking if stream has any elements
         System.out.println(stringCollection.stream().findFirst().isPresent());
-        
+
 
         //getting the entire string stream into a single string with ^ as prefix $ as suffix and *** as delimiter
        String conc= stringCollection.stream().collect(Collectors.joining("***","^","$"));
