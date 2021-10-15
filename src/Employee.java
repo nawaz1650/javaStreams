@@ -47,6 +47,16 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee o) {
+        //salary is long type,so if salary  might go beyond int limit go for commented code
         return (int)(this.salary-o.salary);
+
+//        if(this.salary>o.getSalary())
+//            return -1;
+//        else if(this.salary< o.getSalary())
+//          return 1;
+//           else return 0;
+
+
+
     }
 }
